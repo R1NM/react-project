@@ -2,9 +2,10 @@
     "name": "project",
     "version": "1.0.0",
     "scripts": {
-        "client": "cd client && npm run start",
-        "server": "node server.js",
-        "dev": "concurrently --kill-other-on-fail \"npm run server\" \"npm run client\""
+        "start": "node server.js",
+        "backend": "nodemon server.js",
+        "frontend": "npm run start --prefix client",
+        "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
     },
     "dependencies": {
         "body-parser": "^1.19.2",
