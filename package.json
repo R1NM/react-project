@@ -1,16 +1,16 @@
 {
-    "name":"project",
+    "name": "project",
     "version": "1.0.0",
     "scripts": {
-        "client": "cd client && yarn start",
-        "server": "nodemon server.js",
-        "dev":"concurrently --kill-other-on-fail \"yarn server\" \" yarn client\""
+        "client": "cd client && npm run start",
+        "server": "node server.js",
+        "dev": "concurrently --kill-other-on-fail \"npm run server\" \"npm run client\""
     },
     "dependencies": {
-        "body-parser":"^1.19.2",
-        "express":"^4.17.3"
+        "body-parser": "^1.19.2",
+        "express": "^4.17.3"
     },
     "devDependencies": {
-        "concurrently":"^7.0.0"
+        "concurrently": "^7.0.0"
     }
 }
