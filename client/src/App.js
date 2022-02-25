@@ -34,7 +34,6 @@ function App(props) {
         clearInterval(timer)
       }
     },20);
-    console.log(completed);
     Axios.get("/api/customers")
       .then((res)=>{
         if(res.data){
@@ -49,7 +48,7 @@ function App(props) {
   
   const customerList=customers.map((cus,idx)=>{
     return(<Customer id={cus.id} name={cus.name} image={cus.image} 
-      birthday={cus.birthday} gender={cus.gender} group={cus.group}
+      birthday={cus.birthday} gender={cus.gender} job={cus.job}
       />)
   });
   
@@ -64,7 +63,7 @@ function App(props) {
             <TableCell>Name</TableCell>
             <TableCell>Birthday</TableCell>
             <TableCell>Gender</TableCell>
-            <TableCell>Group</TableCell>
+            <TableCell>Job</TableCell>
           </TableRow>
         </TableHead>
 

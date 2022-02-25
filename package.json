@@ -9,7 +9,8 @@
     },
     "dependencies": {
         "body-parser": "^1.19.2",
-        "express": "^4.17.3"
+        "express": "^4.17.3",
+        "mysql": "^2.18.1"
     },
     "devDependencies": {
         "concurrently": "^7.0.0"

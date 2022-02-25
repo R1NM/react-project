@@ -9,7 +9,7 @@ function Customer(props) {
             <TableCell>{props.name}</TableCell>
             <TableCell>{props.birthday}</TableCell>
             <TableCell>{props.gender}</TableCell>
-            <TableCell>{props.group}</TableCell>
+            <TableCell>{props.job}</TableCell>
 
         </TableRow>
     )
